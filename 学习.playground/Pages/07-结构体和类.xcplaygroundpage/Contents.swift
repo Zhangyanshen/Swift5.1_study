@@ -68,7 +68,7 @@ print(d2)
  rip + 内存地址：全局变量
  rbp - 内存地址：局部变量
  rax + 内存地址：堆空间
- rax：函数返回值
+ rax/rdx：函数返回值
  rdi、rsi、rdx、rcx、r8、r9存放函数参数
  rsp、rbp：栈操作
  */

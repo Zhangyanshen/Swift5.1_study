@@ -7,13 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2370165223BDCBCD00B205F6 /* YSPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 2370165123BDCBCD00B205F6 /* YSPerson.m */; };
-		23A45E89237BF5DD0064F89D /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A45E88237BF5DD0064F89D /* main.swift */; };
-		23AF3FBA23A86F96003B5CC0 /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23AF3FB923A86F96003B5CC0 /* Test.swift */; };
+		2370166023BDE66800B205F6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2370165F23BDE66800B205F6 /* main.m */; };
+		2370166823BDE68800B205F6 /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2370166723BDE68800B205F6 /* Car.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		23A45E83237BF5DD0064F89D /* CopyFiles */ = {
+		2370165A23BDE66800B205F6 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -25,16 +24,14 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		2370164F23BDCBCD00B205F6 /* TestSwift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TestSwift-Bridging-Header.h"; sourceTree = "<group>"; };
-		2370165023BDCBCD00B205F6 /* YSPerson.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YSPerson.h; sourceTree = "<group>"; };
-		2370165123BDCBCD00B205F6 /* YSPerson.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YSPerson.m; sourceTree = "<group>"; };
-		23A45E85237BF5DD0064F89D /* TestSwift */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = TestSwift; sourceTree = BUILT_PRODUCTS_DIR; };
-		23A45E88237BF5DD0064F89D /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
-		23AF3FB923A86F96003B5CC0 /* Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test.swift; sourceTree = "<group>"; };
+		2370165C23BDE66800B205F6 /* TestOC */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = TestOC; sourceTree = BUILT_PRODUCTS_DIR; };
+		2370165F23BDE66800B205F6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2370166623BDE68700B205F6 /* TestOC-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TestOC-Bridging-Header.h"; sourceTree = "<group>"; };
+		2370166723BDE68800B205F6 /* Car.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Car.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		23A45E82237BF5DD0064F89D /* Frameworks */ = {
+		2370165923BDE66800B205F6 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -44,71 +41,68 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		23A45E7C237BF5DD0064F89D = {
+		2370165323BDE66800B205F6 = {
 			isa = PBXGroup;
 			children = (
-				23A45E87237BF5DD0064F89D /* TestSwift */,
-				23A45E86237BF5DD0064F89D /* Products */,
+				2370165E23BDE66800B205F6 /* TestOC */,
+				2370165D23BDE66800B205F6 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		23A45E86237BF5DD0064F89D /* Products */ = {
+		2370165D23BDE66800B205F6 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				23A45E85237BF5DD0064F89D /* TestSwift */,
+				2370165C23BDE66800B205F6 /* TestOC */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		23A45E87237BF5DD0064F89D /* TestSwift */ = {
+		2370165E23BDE66800B205F6 /* TestOC */ = {
 			isa = PBXGroup;
 			children = (
-				23A45E88237BF5DD0064F89D /* main.swift */,
-				23AF3FB923A86F96003B5CC0 /* Test.swift */,
-				2370165023BDCBCD00B205F6 /* YSPerson.h */,
-				2370165123BDCBCD00B205F6 /* YSPerson.m */,
-				2370164F23BDCBCD00B205F6 /* TestSwift-Bridging-Header.h */,
+				2370165F23BDE66800B205F6 /* main.m */,
+				2370166723BDE68800B205F6 /* Car.swift */,
+				2370166623BDE68700B205F6 /* TestOC-Bridging-Header.h */,
 			);
-			path = TestSwift;
+			path = TestOC;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		23A45E84237BF5DD0064F89D /* TestSwift */ = {
+		2370165B23BDE66800B205F6 /* TestOC */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 23A45E8C237BF5DD0064F89D /* Build configuration list for PBXNativeTarget "TestSwift" */;
+			buildConfigurationList = 2370166323BDE66800B205F6 /* Build configuration list for PBXNativeTarget "TestOC" */;
 			buildPhases = (
-				23A45E81237BF5DD0064F89D /* Sources */,
-				23A45E82237BF5DD0064F89D /* Frameworks */,
-				23A45E83237BF5DD0064F89D /* CopyFiles */,
+				2370165823BDE66800B205F6 /* Sources */,
+				2370165923BDE66800B205F6 /* Frameworks */,
+				2370165A23BDE66800B205F6 /* CopyFiles */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = TestSwift;
-			productName = TestSwift;
-			productReference = 23A45E85237BF5DD0064F89D /* TestSwift */;
+			name = TestOC;
+			productName = TestOC;
+			productReference = 2370165C23BDE66800B205F6 /* TestOC */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		23A45E7D237BF5DD0064F89D /* Project object */ = {
+		2370165423BDE66800B205F6 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1110;
 				LastUpgradeCheck = 1110;
 				ORGANIZATIONNAME = "张延深";
 				TargetAttributes = {
-					23A45E84237BF5DD0064F89D = {
+					2370165B23BDE66800B205F6 = {
 						CreatedOnToolsVersion = 11.1;
 						LastSwiftMigration = 1110;
 					};
 				};
 			};
-			buildConfigurationList = 23A45E80237BF5DD0064F89D /* Build configuration list for PBXProject "TestSwift" */;
+			buildConfigurationList = 2370165723BDE66800B205F6 /* Build configuration list for PBXProject "TestOC" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -116,31 +110,30 @@
 				en,
 				Base,
 			);
-			mainGroup = 23A45E7C237BF5DD0064F89D;
-			productRefGroup = 23A45E86237BF5DD0064F89D /* Products */;
+			mainGroup = 2370165323BDE66800B205F6;
+			productRefGroup = 2370165D23BDE66800B205F6 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				23A45E84237BF5DD0064F89D /* TestSwift */,
+				2370165B23BDE66800B205F6 /* TestOC */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		23A45E81237BF5DD0064F89D /* Sources */ = {
+		2370165823BDE66800B205F6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				23A45E89237BF5DD0064F89D /* main.swift in Sources */,
-				23AF3FBA23A86F96003B5CC0 /* Test.swift in Sources */,
-				2370165223BDCBCD00B205F6 /* YSPerson.m in Sources */,
+				2370166823BDE68800B205F6 /* Car.swift in Sources */,
+				2370166023BDE66800B205F6 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		23A45E8A237BF5DD0064F89D /* Debug */ = {
+		2370166123BDE66800B205F6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -195,12 +188,10 @@
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
-		23A45E8B237BF5DD0064F89D /* Release */ = {
+		2370166223BDE66800B205F6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -248,34 +239,29 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = macosx;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
 			};
 			name = Release;
 		};
-		23A45E8D237BF5DD0064F89D /* Debug */ = {
+		2370166423BDE66800B205F6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = J46HYNA3T9;
 				ENABLE_HARDENED_RUNTIME = YES;
-				GCC_OPTIMIZATION_LEVEL = 0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 					"@loader_path/../Frameworks",
 				);
-				OTHER_SWIFT_FLAGS = "-D OTHER";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG TEST";
-				SWIFT_OBJC_BRIDGING_HEADER = "TestSwift/TestSwift-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "TestOC/TestOC-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
-		23A45E8E237BF5DD0064F89D /* Release */ = {
+		2370166523BDE66800B205F6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
@@ -287,9 +273,8 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/../Frameworks",
 				);
-				OTHER_SWIFT_FLAGS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "TestSwift/TestSwift-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "TestOC/TestOC-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
@@ -297,25 +282,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		23A45E80237BF5DD0064F89D /* Build configuration list for PBXProject "TestSwift" */ = {
+		2370165723BDE66800B205F6 /* Build configuration list for PBXProject "TestOC" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				23A45E8A237BF5DD0064F89D /* Debug */,
-				23A45E8B237BF5DD0064F89D /* Release */,
+				2370166123BDE66800B205F6 /* Debug */,
+				2370166223BDE66800B205F6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		23A45E8C237BF5DD0064F89D /* Build configuration list for PBXNativeTarget "TestSwift" */ = {
+		2370166323BDE66800B205F6 /* Build configuration list for PBXNativeTarget "TestOC" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				23A45E8D237BF5DD0064F89D /* Debug */,
-				23A45E8E237BF5DD0064F89D /* Release */,
+				2370166423BDE66800B205F6 /* Debug */,
+				2370166523BDE66800B205F6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 23A45E7D237BF5DD0064F89D /* Project object */;
+	rootObject = 2370165423BDE66800B205F6 /* Project object */;
 }

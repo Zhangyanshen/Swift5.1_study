@@ -9,5 +9,24 @@
         <page name='06-可选项'/>
         <page name='07-结构体和类'/>
         <page name='08-闭包'/>
+        <page name='09-属性'/>
+        <page name='10-方法'/>
+        <page name='11-下标'/>
+        <page name='12-继承'/>
+        <page name='13-初始化'/>
+        <page name='14-可选链'/>
+        <page name='15-协议'/>
+        <page name='16-Error'/>
+        <page name='17-泛型'/>
+        <page name='18-汇编窥探String和Array'/>
+        <page name='19-高级运算符'/>
+        <page name='20-扩展'/>
+        <page name='21-访问控制'/>
+        <page name='22-内存管理'/>
+        <page name='23-内存访问冲突'/>
+        <page name='24-字面量'/>
+        <page name='25-模式匹配'/>
+        <page name='26-从OC到Swift'/>
+        <page name='27-函数式编程'/>
     </pages>
 </playground>
