@@ -9,18 +9,189 @@
 //import Dispatch
 //import Foundation
 
-let arr = [1, 2, 3]
-let result = arr.lazy.map {
-    (i : Int) -> Int in
-    print("mapping \(i)")
-    return i * 2
+protocol ArrayType {}
+extension Array: ArrayType {}
+extension NSArray: ArrayType {}
+
+func isArrayType(_ type: Any.Type) -> Bool {
+    type is ArrayType.Type
 }
 
-print("begin------")
-for i in result {
-    print("mapped", i)
-}
-print("end------")
+print(isArrayType([Int].self))
+print(isArrayType([Double].self))
+print(isArrayType([Any].self))
+print(isArrayType(NSArray.self))
+print(isArrayType(NSMutableArray.self))
+print(isArrayType(String.self))
+
+//func isArray(_ value: Any) -> Bool {
+//    value is [Any]
+//}
+//
+//print(isArray([1, 2]))
+//print(isArray(["1", 2]))
+//print(isArray(NSArray()))
+//print(isArray(NSMutableArray()))
+//print(isArray("123edr"))
+
+//struct YS<Base> {
+//    var base: Base
+//    init(_ base: Base) {
+//        self.base = base
+//    }
+//}
+//
+//protocol YSProtocol {}
+//extension YSProtocol {
+//    var ys: YS<Self> {
+//        set {}
+//        get {
+//            YS(self)
+//        }
+//    }
+//    static var ys: YS<Self>.Type {
+//        set {}
+//        get {
+//            YS.self
+//        }
+//    }
+//}
+//
+//extension String: YSProtocol {}
+//extension NSString: YSProtocol {}
+//extension YS where Base: ExpressibleByStringLiteral {
+//    var numberCount: Int {
+//        var count = 0
+//        for c in (base as! String) where ("0"..."9").contains(c) {
+//            count += 1
+//        }
+//        return count
+//    }
+//}
+//
+//var str1 = "123wer12ed"
+//var str2: NSString = "123wer12ed"
+//var str3: NSMutableString = "123wer12ed"
+//print(str1.ys.numberCount)
+//print(str2.ys.numberCount)
+//print(str3.ys.numberCount)
+
+//func add(_ v1: Int, _ v2: Int) -> Int { v1 + v2 }
+//func sub(_ v1: Int, _ v2: Int) -> Int { v1 - v2 }
+//func multiple(_ v1: Int, _ v2: Int) -> Int { v1 * v2 }
+//func divide(_ v1: Int, _ v2: Int) -> Int { v1 / v2 }
+//func mod(_ v1: Int, _ v2: Int) -> Int { v1 % v2 }
+//prefix operator ~
+//prefix func ~<A, B, C>(_ fn: @escaping (A, B) -> C) -> (B) -> (A) -> C {
+//    {b in { a in fn(a, b) }}
+//}
+//print((~add)(10)(20))
+//print((~sub)(10)(20))
+//print((~multiple)(10)(20))
+//print((~divide)(10)(20))
+//print((~mod)(10)(20))
+
+//func add(_ v1: Int, _ v2: Int, _ v3: Int) -> Int { v1 + v2 + v3 }
+//func add(_ v3: Int) -> (Int) -> (Int) -> Int {
+//    return {
+//        v2 in
+//        return {
+//            v1 in
+//            return v1 + v2 + v3
+//        }
+//    }
+//}
+//
+//print(add(10, 20, 30))
+//print(add(30)(20)(10))
+
+//func add(_ v: Int) -> (Int) -> Int { { $0 + v } }
+//func sub(_ v: Int) -> (Int) -> Int { { $0 - v } }
+//func multiple(_ v: Int) -> (Int) -> Int { { $0 * v } }
+//func divide(_ v: Int) -> (Int) -> Int { { $0 / v } }
+//func mod(_ v: Int) -> (Int) -> Int { { $0 % v } }
+//
+//infix operator >>>: AdditionPrecedence
+//func >>><A, B, C>(_ f1: @escaping (A) -> B,
+//         _ f2: @escaping (B) -> C) -> (A) -> C
+//{
+//    { f2(f1($0)) }
+//}
+//
+//var fn = add(3) >>> multiple(5) >>> sub(1) >>> mod(10) >>> divide(2)
+//var num = 1
+//print(fn(num))
+
+//struct Person {
+//    var name: String
+//    var age: Int
+//    init?(_ json: [String: Any]) {
+//        guard let name = json["name"] as? String,
+//              let age = json["age"] as? Int
+//        else { return nil }
+//        self.name = name
+//        self.age = age
+//    }
+//}
+//
+//var json: Dictionary? = ["name": "Jack", "age": 10]
+//var p1 = json != nil ? Person(json!) : nil
+//var p2 = json.flatMap(Person.init)
+
+//var score: Int? = nil
+//var str1 = score != nil ? "Score is \(score!)" : "No score"
+//print(str1)
+//var str2 = score.map { "score is \($0)" } ?? "No score"
+//print(str2)
+
+//var fmt = DateFormatter()
+//fmt.dateFormat = "yyyy-MM-dd"
+//var str: String? = "2019-12-12"
+//var date1 = str != nil ? fmt.date(from: str!) : nil
+//print(date1)
+//var date2 = str.flatMap { fmt.date(from: $0) }
+//print(date2)
+//var date3 = str.flatMap(fmt.date)
+//print(date3)
+
+//var num1: Int? = 10
+//// Optional(20)
+//var num2 = (num1 != nil) ? (num1! + 10) : nil
+//print(num2)
+//// Optional(20)
+//var num3 = num1.map { $0 + 10 }
+//print(num3)
+
+//var num1: Int? = 10
+//// Optional(Optional(20))
+//var num2 = num1.map { Optional.some($0 * 2) }
+//print(num2)
+//// Optional(20)
+//var num3 = num1.flatMap { Optional.some($0 * 2) }
+//print(num3)
+
+//var num1: Int? = 10
+//// Optional(20)
+//var num2 = num1.map { $0 * 2 }
+//print(num2)
+//
+//var num3: Int? = nil
+//// nil
+//var num4 = num3.map { $0 * 2 }
+//print(num4)
+
+//let arr = [1, 2, 3]
+//let result = arr.lazy.map {
+//    (i : Int) -> Int in
+//    print("mapping \(i)")
+//    return i * 2
+//}
+//
+//print("begin------")
+//for i in result {
+//    print("mapped", i)
+//}
+//print("end------")
 
 //var arr = [1, 2, 3, 4]
 //// [2, 4, 6, 8]

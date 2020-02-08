@@ -27,6 +27,9 @@
         <page name='24-字面量'/>
         <page name='25-模式匹配'/>
         <page name='26-从OC到Swift'/>
-        <page name='27-函数式编程'/>
+        <page name='27-函数式编程（热身）'/>
+        <page name='28-函数式编程'/>
+        <page name='29-面向协议编程'/>
+        <page name='30-响应式编程'/>
     </pages>
 </playground>
